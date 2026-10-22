@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0a0d12">
+  <meta name="description" content="Find your next challenge. Learn, compete, and capture the flag with CTF Arena.">
+  <title>CTF Arena — Think like a hacker</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#" aria-label="CTF Arena home">
+      <span class="brand-mark" aria-hidden="true">✳</span>
+      <span>ctf<span class="brand-light">arena</span></span>
+    </a>
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="#challenges">Challenges</a>
+      <a href="#how-it-works">How it works</a>
+      <a href="#community">Community</a>
+    </nav>
+    <a class="header-cta" href="#challenges">Enter the arena <span aria-hidden="true">↗</span></a>
+  </header>
+
+  <main>
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-grid" aria-hidden="true"></div>
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="status-dot"></span> THE PLAYGROUND FOR CURIOUS MINDS</div>
+        <h1 id="hero-title">Think like a hacker.<br><span>Play to learn.</span></h1>
+        <p class="hero-description">Crack challenges, sharpen your skills, and find your people. Your next cybersecurity breakthrough starts with a flag.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#challenges">Explore challenges <span aria-hidden="true">→</span></a>
+          <a class="text-link" href="#how-it-works"><span class="play-icon" aria-hidden="true">▷</span> How CTFs work</a>
+        </div>
+        <div class="social-proof">
+          <div class="avatar-stack" aria-hidden="true">
+            <span class="avatar avatar-one">J</span><span class="avatar avatar-two">M</span><span class="avatar avatar-three">A</span><span class="avatar avatar-four">+</span>
+          </div>
+          <p><strong>12,400+</strong> curious minds are playing</p>
+        </div>
+      </div>
+
+      <div class="hero-art" aria-label="Illustration of a flag capture terminal">
+        <div class="orbit orbit-one"></div>
+        <div class="orbit orbit-two"></div>
+        <div class="spark spark-one">✦</div>
+        <div class="spark spark-two">+</div>
+        <div class="terminal-window">
+          <div class="terminal-top">
+            <div class="window-dots"><i></i><i></i><i></i></div>
+            <span>root@arena: ~/challenge</span>
+            <span class="terminal-menu">···</span>
+          </div>
+          <div class="terminal-body">
+            <p><span class="terminal-green">➜</span> <span class="terminal-purple">~</span> nmap -sC target.ctf</p>
+            <p class="terminal-muted">Scanning target...</p>
+            <p><span class="terminal-green">✓</span> 3 open ports found</p>
+            <p><span class="terminal-green">➜</span> <span class="terminal-purple">~</span> ./find_the_flag</p>
+            <div class="flag-found"><span>FLAG CAPTURED</span><strong>CTF<span>{</span>curiosity_wins<span>}</span></strong></div>
+            <p class="terminal-prompt"><span class="terminal-green">➜</span> <span class="terminal-purple">~</span> <span class="cursor"></span></p>
+          </div>
+        </div>
+        <div class="floating-badge"><span class="badge-icon">⚑</span><span><small>YOUR NEXT FLAG</small><strong>is out there.</strong></span></div>
+        <div class="hero-caption"><span></span> LEARN BY DOING — ONE FLAG AT A TIME</div>
+      </div>
+      <a class="scroll-cue" href="#challenges"><span></span> SCROLL TO EXPLORE</a>
+    </section>
+
+    <section class="stats-strip" aria-label="CTF Arena at a glance">
+      <div><strong>250<span>+</span></strong><small>hands-on challenges</small></div>
+      <div><strong>18</strong><small>skill categories</small></div>
+      <div><strong>All <span>levels</span></strong><small>beginner to expert</small></div>
+      <div class="stats-note"><span class="status-dot"></span> ALWAYS OPEN. ALWAYS LEARNING.</div>
+    </section>
+
+    <section class="challenges section-wrap" id="challenges">
+      <div class="section-heading">
+        <div>
+          <div class="eyebrow">PICK YOUR FIRST QUEST</div>
+          <h2>There’s a challenge<br>with <span>your name on it.</span></h2>
+        </div>
+        <a class="text-link challenge-link" href="#how-it-works">See how it works <span aria-hidden="true">↗</span></a>
+      </div>
+      <div class="challenge-grid">
+        <article class="challenge-card card-green">
+          <div class="card-topline"><span class="category-icon">⌘</span><span class="difficulty">01 / START HERE</span></div>
+          <h3>Web<br>exploitation</h3>
+          <p>Find the cracks in the code. Learn how the web works under the hood.</p>
+          <div class="card-footer"><span>42 CHALLENGES</span><a href="#how-it-works" aria-label="Explore web exploitation challenges">↗</a></div>
+        </article>
+        <article class="challenge-card card-purple">
+          <div class="card-topline"><span class="category-icon">⌁</span><span class="difficulty">02 / DECODE IT</span></div>
+          <h3>Cryptography</h3>
+          <p>Turn ciphertext into clarity. Put your pattern-spotting skills to work.</p>
+          <div class="card-footer"><span>36 CHALLENGES</span><a href="#how-it-works" aria-label="Explore cryptography challenges">↗</a></div>
+        </article>
+        <article class="challenge-card card-orange">
+          <div class="card-topline"><span class="category-icon">⌨</span><span class="difficulty">03 / GO DEEPER</span></div>
+          <h3>Reverse<br>engineering</h3>
+          <p>Take things apart, follow the clues, and discover what makes them tick.</p>
+          <div class="card-footer"><span>28 CHALLENGES</span><a href="#how-it-works" aria-label="Explore reverse engineering challenges">↗</a></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="how-section" id="how-it-works">
+      <div class="how-inner">
+        <div class="eyebrow">NO EXPERIENCE? NO PROBLEM.</div>
+        <h2>Small steps.<br><span>Big “aha!” moments.</span></h2>
+        <div class="steps">
+          <div class="step"><span class="step-number">01</span><div><h3>Choose a challenge</h3><p>Pick a topic that sparks your curiosity. Every challenge has hints when you need them.</p></div></div>
+          <div class="step"><span class="step-number">02</span><div><h3>Follow the clues</h3><p>Experiment, explore, and learn by doing in a safe, hands-on environment.</p></div></div>
+          <div class="step"><span class="step-number">03</span><div><h3>Capture the flag</h3><p>Submit the hidden flag, collect your win, and move on to your next adventure.</p></div></div>
+        </div>
+        <a class="button button-primary" href="#challenges">Find your first challenge <span aria-hidden="true">→</span></a>
+      </div>
+      <div class="how-decoration" aria-hidden="true"><span>0101</span><span>1010</span><span>0011</span><span>1100</span></div>
+    </section>
+
+    <section class="community section-wrap" id="community">
+      <div class="community-mark" aria-hidden="true">✳</div>
+      <div>
+        <div class="eyebrow">BETTER, TOGETHER</div>
+        <h2>Curiosity is better<br><span>in good company.</span></h2>
+        <p>Compare notes, share your wins, and learn alongside a welcoming community of future security pros.</p>
+      </div>
+      <a class="button button-outline" href="#challenges">Join the community <span aria-hidden="true">↗</span></a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="brand" href="#" aria-label="CTF Arena home"><span class="brand-mark" aria-hidden="true">✳</span><span>ctf<span class="brand-light">arena</span></span></a>
+    <p>Built for curious minds. Play responsibly.</p>
+    <span class="footer-status"><span class="status-dot"></span> THE ARENA IS OPEN</span>
+  </footer>
+</body>
+</html>
